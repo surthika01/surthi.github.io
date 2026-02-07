@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
