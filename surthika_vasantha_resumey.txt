@@ -1,0 +1,53 @@
+SURTHIKA VASANTHA S
+Tamil Nadu, IN | +91 88385 73865 | surthikasathishraj@gmail.com | LinkedIn
+PROFILE
+Software Engineer with 2 years of experience in frontend and backend development, including leadership as a Lead Frontend Developer. Expert in React.js and Vue.js, building scalable, high-performance applications using component-based architecture, state management, RESTAPIs, and role-based access control. Strong at dashboard development, API-driven workflows, reusable UI components, and enterprise-ready multi-tenant solutions, with a focus on clean code and performance
+________________________________________
+SKILLS & INTERESTS
+●	Languages: JavaScript (ES6+), HTML5, CSS3, SQL
+●	Frameworks/Libraries: React.js, Vue.js, Node.js, Express.js, Bootstrap, Vuetify, Sequelize
+●	Databases: PostgreSQL, MySQL
+●	Cloud: Basic AWS (S3)
+●	Tools/Practices: Git, GitHub, Bitbucket, Postman, CI/CD basic, RESTful APIs.
+________________________________________
+WORK EXPERIENCE
+Senzr AIOT Partner Edge To Cloud — Srivaikundam, IN
+Software Engineer,                                                                                                              April 2024 – Jan 2026
+●	Lead and manage frontend development across multiple projects, coordinating tasks, priorities, and delivery timelines within the team.
+●	Leading a cross-functional team of 4 developers, providing mentorship and establishing coding standards aligned with enterprise-grade scalability.
+●	Engineered robust and scalable RESTful APIs incorporating advanced payload validation techniques, improving system reliability across multi-tenant environments.
+Icanio Technologies — Nazareth, IN 
+Backend Developer Trainee,                                                                                               Sep 2023 – Mar 20 24
+●	Developed and maintained Node.js-based backend APIs with strong error handling, authentication, and audit logging.
+●	Collaborated with the engineering team to deliver production-ready backend services, including documentation and testing support.
+________________________________________
+PROJECTS
+Field Force Automation — Senzr AIOT                                                                              July2025 – Jan 2026                                                            
+Tech Stack : Vue.js, Tailwind CSS, Node.js, PostgreSQL, AWS (S3)
+●	Developed  a SaaS product with hierarchical role-based access to optimize Digital Work Order     Management, enabling seamless task creation, assignment, and status tracking.
+●	Implemented real-time GPS tracking for field staff to monitor live locations and movement history.
+●	Built Work Order & Task Management workflows to streamline task prioritization and completion tracking.
+ Payroll Automation Platform — Senzr AIOT                                                                  Dec 2024 -  Jun 2025
+Tech Stack : React.js, Directus(Plugin), AWS                                                                                            
+●	Automated Payroll Processing & Payslip System is an end-to-end payroll module with automated payslip generation and distribution to ensure seamless workflows and secure digital delivery..
+●	Real-time Calculation & Compliance Engine Architected a cloud-based calculation engine on AWS to automate statutory deductions and tax rule compliance, ensuring 100% accuracy in real-time salary computations.
+●	Salary Reporting & Analytics Dashboards Designed responsive UI dashboards using Tailwind CSS for comprehensive salary reporting and data visualization to provide actionable financial insights.
+Device Access-Based Management Platform — Senzr AIOT                                         May 2024 – Nov  2024
+Tech Stack : Vue.js, Vuetify, Node.js, PostgreSQL
+•	Built a centralized Device Access Management Platform handling employee attendance, real-time entry/exit tracking, and working-hour calculations across multiple locations.
+•	Designed controller-based door access control, enabling location-wise, person-wise, and access-level-based permissions, ensuring secure and structured access management.
+•	Implemented shift management, leave handling, and automated attendance logic, improving accuracy in presence tracking, late entry detection, and operational reporting.
+
+Trade Management Platform — Icanio Technologies                                                        Dec 2023 – Mar 2024
+Tech Stack : Node.js, MySQL
+●	Built a scalable trade management backend system to handle secure transactions, validation, and audit tracking.
+●	Developed RESTful APIs with strong payload validation, error handling, and audit logs for data integrity.
+Asset Management Platform — Icanio Technologies                                                        Sep 2023 – Dec 2023                                    
+Tech Stack : Node.js, PostgreSQL
+●	Developed an asset management backend platform for tracking assets, monitoring status, and managing operational data.
+●	Engineered notification systems and reporting APIs to support analytics and operational efficiency.
+________________________________________
+EDUCATION
+B.E. ECE, Dr. Sivanthi Aditanar College of Engineering, Tiruchchendur,                          Sep 2019 – Jun 2023  
+CGP : 7.8 /10
+	
