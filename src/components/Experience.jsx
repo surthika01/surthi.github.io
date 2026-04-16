@@ -6,7 +6,7 @@ const Experience = () => {
       company: "Senzr AIOT Partner Edge To Cloud",
       location: "Srivaikundam, IN",
       role: "Software Engineer",
-      duration: "April 2024 – Jan 2026",
+      duration: "Jul 2024 – Jan 2026",
       points: [
         "Lead and manage frontend development across multiple projects, coordinating tasks, priorities, and delivery timelines within the team.",
         "Leading a cross-functional team of 4 developers, providing mentorship and establishing coding standards aligned with enterprise-grade scalability.",
@@ -42,19 +42,19 @@ const Experience = () => {
             <div key={index} className="relative pl-8 md:pl-12">
               {/* Timeline dot */}
               <div className="absolute -left-3.5 top-1 h-6 w-6 rounded-full border-4 border-white bg-indigo-600 shadow-sm"></div>
-              
+
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
                 <h3 className="text-2xl font-bold text-gray-900">{exp.role}</h3>
                 <span className="text-sm font-medium text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full mt-1 sm:mt-0">
                   {exp.duration}
                 </span>
               </div>
-              
+
               <div className="mb-4">
                 <h4 className="text-lg font-semibold text-gray-700">{exp.company}</h4>
                 <p className="text-sm text-gray-500">{exp.location}</p>
               </div>
-              
+
               <ul className="list-disc leading-relaxed text-gray-600 space-y-2 ml-4">
                 {exp.points.map((point, idx) => (
                   <li key={idx}>

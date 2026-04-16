@@ -5,7 +5,7 @@ const Projects = () => {
     {
       title: "Field Force Automation",
       company: "Senzr AIOT",
-      duration: "July 2025 – Jan 2026",
+      duration: "Jul 2025 – Jan 2026",
       tech: ["Vue.js", "Tailwind CSS", "Node.js", "PostgreSQL", "AWS (S3)"],
       description: [
         "Developed a SaaS product with hierarchical role-based access to optimize Digital Work Order Management, enabling seamless task creation, assignment, and status tracking.",
@@ -27,7 +27,7 @@ const Projects = () => {
     {
       title: "Device Access Management Platform",
       company: "Senzr AIOT",
-      duration: "May 2024 – Nov 2024",
+      duration: "Jul 2024 – Nov 2024",
       tech: ["Vue.js", "Vuetify", "Node.js", "PostgreSQL"],
       description: [
         "Built a centralized Device Access Management Platform handling employee attendance, real-time entry/exit tracking, and working-hour calculations.",
@@ -80,14 +80,14 @@ const Projects = () => {
                   </span>
                 </div>
                 <div className="mb-4">
-                   <p className="text-sm font-medium text-indigo-600 mb-2">{project.company}</p>
-                   <div className="flex flex-wrap gap-2 mb-4">
-                      {project.tech.map((t, i) => (
-                        <span key={i} className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-green-100 text-green-800">
-                          {t}
-                        </span>
-                      ))}
-                   </div>
+                  <p className="text-sm font-medium text-indigo-600 mb-2">{project.company}</p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tech.map((t, i) => (
+                      <span key={i} className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-green-100 text-green-800">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
                 </div>
                 <ul className="list-disc pl-5 space-y-2 text-sm text-gray-600">
                   {project.description.map((desc, idx) => (
