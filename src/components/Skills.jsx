@@ -1,58 +1,48 @@
 import React from 'react';
 
-const Skills = () => {
-  const skillCategories = [
-    {
-      title: "Languages",
-      skills: ["JavaScript (ES6+)", "HTML5", "CSS3", "SQL"]
-    },
-    {
-      title: "Frameworks & Libraries",
-      skills: ["React.js", "Vue.js", "Node.js", "Express.js", "Bootstrap", "Vuetify", "Sequelize"]
-    },
-    {
-      title: "Databases",
-      skills: ["PostgreSQL", "MySQL"]
-    },
-    {
-      title: "Cloud",
-      skills: ["AWS (S3)"]
-    },
-    {
-      title: "Tools & Practices",
-      skills: ["Git", "GitHub", "Bitbucket", "Postman", "CI/CD", "RESTful APIs"]
-    }
-  ];
+const skillGroups = [
+  { title: 'Frontend', score: 92, skills: ['React.js', 'Vue.js', 'Tailwind CSS', 'Vuetify', 'Responsive UI'] },
+  { title: 'Backend', score: 88, skills: ['Node.js', 'Express.js', 'Java Spring Boot', 'REST APIs', 'Validation'] },
+  { title: 'Data', score: 84, skills: ['PostgreSQL', 'MySQL', 'Sequelize', 'Schema Design', 'Query Tuning'] },
+  { title: 'Delivery', score: 86, skills: ['Git', 'GitHub', 'Bitbucket', 'Postman', 'CI/CD'] },
+];
 
+const Skills = () => {
   return (
-    <section id="skills" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Skills & Interests
-          </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
-            A comprehensive toolkit for modern web development.
+    <section id="skills" className="section-shell">
+      <div className="mx-auto max-w-7xl px-5 sm:px-8">
+        <div className="section-heading">
+          <div>
+            <div className="section-kicker">Skills</div>
+            <h2 className="section-title mt-4">Modern stack, practical execution.</h2>
+          </div>
+          <p className="section-copy">
+            A focused toolkit for shipping responsive interfaces, reliable APIs, and data-backed business platforms.
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {skillCategories.map((category, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-300">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4 border-b pb-2 border-gray-100">
-                {category.title}
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {category.skills.map((skill, idx) => (
-                  <span 
-                    key={idx} 
-                    className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800"
-                  >
+
+        <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          {skillGroups.map((group) => (
+            <article key={group.title} className="premium-card group p-6">
+              <div className="flex items-center justify-between">
+                <h3 className="text-xl font-bold text-white">{group.title}</h3>
+                <span className="rounded-full border border-cyan-300/30 bg-cyan-300/10 px-3 py-1 text-xs font-bold text-cyan-100">
+                  {group.score}%
+                </span>
+              </div>
+
+              <div className="mt-6 h-2 rounded-full bg-slate-800">
+                <div className="skill-meter h-full rounded-full bg-gradient-to-r from-cyan-300 via-blue-400 to-violet-400" style={{ '--skill-width': `${group.score}%` }} />
+              </div>
+
+              <div className="mt-6 flex flex-wrap gap-2">
+                {group.skills.map((skill) => (
+                  <span key={skill} className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-xs font-semibold text-slate-300 transition group-hover:border-cyan-300/30 group-hover:text-cyan-100">
                     {skill}
                   </span>
                 ))}
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

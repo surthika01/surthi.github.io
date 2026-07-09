@@ -1,69 +1,87 @@
-import surthiImage from '../assets/surthi-image.jpeg';
+const highlights = [
+  { value: '2+', label: 'Years building production apps' },
+  { value: '5', label: 'Enterprise projects delivered' },
+  { value: '4', label: 'Developers mentored' },
+];
 
 const Hero = () => {
-    return (
-        <section id="hero" className="relative pt-24 pb-12 sm:pt-32 sm:pb-16 lg:pb-24 overflow-hidden bg-gradient-to-br from-indigo-50 to-white">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
-                    <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
-                        <div className="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800 mb-4 animate-fade-in-up">
-                            Available for Opportunities
-                        </div>
-                        <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl mb-4">
-                            <span className="block xl:inline">Hi, I'm</span>
-                            <span className="block text-primary xl:inline"> Surthika Vasantha S</span>
-                        </h1>
-                        <h2 className="text-xl sm:text-2xl text-gray-600 mb-6 font-medium">
-                            Software Engineer | Full Stack Developer
-                        </h2>
-                        <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 leading-relaxed">
-                            With 2 years of experience in frontend and backend development, including leadership as a Lead Frontend Developer. Expert in <span className="text-secondary font-semibold">React.js</span>, <span className="text-secondary font-semibold">Vue.js</span>, and <span className="text-secondary font-semibold">Node.js</span>, building scalable, high-performance applications using component-based architecture and state management.
-                        </p>
-                        <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
-                            <p className="text-sm font-medium text-gray-900 mb-4 flex items-center justify-center lg:justify-start gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                </svg>
-                                surthikasathishraj@gmail.com
-                            </p>
-                            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start gap-4">
-                                <div className="rounded-md shadow">
-                                    <a href="mailto:surthikasathishraj@gmail.com" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-indigo-700 transition-colors md:py-4 md:text-lg md:px-10">
-                                        Contact Me
-                                    </a>
-                                </div>
-                                <div className="mt-3 sm:mt-0">
-                                    <a href="https://www.linkedin.com/in/surthika-vasantha-51739822b/" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-indigo-100 hover:bg-indigo-200 transition-colors md:py-4 md:text-lg md:px-10">
-                                        LinkedIn
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
-                        <div className="relative mx-auto w-full rounded-2xl shadow-xl lg:max-w-md overflow-hidden transform hover:scale-105 transition-transform duration-500">
-                            <div className="relative block w-full bg-gray-100 aspect-w-4 aspect-h-5">
-                                <img
-                                    className="w-full h-full object-cover object-center"
-                                    src={surthiImage}
-                                    alt="Surthika Vasantha S"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <section id="hero" className="relative min-h-screen overflow-hidden px-5 pt-32 sm:px-8 lg:pt-40">
+      <div className="hero-grid absolute inset-0 opacity-40" aria-hidden="true" />
+      <div className="floating-gradient floating-gradient-one" aria-hidden="true" />
+      <div className="floating-gradient floating-gradient-two" aria-hidden="true" />
+
+      <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="animate-reveal">
+          <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-cyan-300/25 bg-cyan-300/10 px-4 py-2 text-sm font-medium text-cyan-100 shadow-lg shadow-cyan-500/10">
+            <span className="h-2 w-2 rounded-full bg-emerald-300 shadow-[0_0_18px_rgba(110,231,183,0.9)]" />
+            Available for software engineering roles
+          </div>
+
+          <h1 className="max-w-5xl text-5xl font-black leading-[0.98] text-white sm:text-6xl lg:text-7xl">
+            Surthika Vasantha S
+            <span className="animated-headline mt-4 block bg-gradient-to-r from-cyan-200 via-blue-300 to-violet-300 bg-clip-text text-transparent">
+              Full Stack Developer
+            </span>
+          </h1>
+
+          <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
+            I build scalable web platforms across React, Vue, Node.js, Java Spring Boot, SQL, and cloud services with a strong focus on clean interfaces, reliable APIs, and practical engineering leadership.
+          </p>
+
+          <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+            <a
+              href="#projects"
+              className="group inline-flex items-center justify-center rounded-full bg-cyan-300 px-7 py-3.5 text-sm font-bold text-slate-950 shadow-xl shadow-cyan-500/25 transition duration-300 hover:-translate-y-1 hover:bg-cyan-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-200"
+            >
+              View Projects
+              <span className="ml-2 transition group-hover:translate-x-1">-&gt;</span>
+            </a>
+            <a
+              href="#contact"
+              className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/[0.04] px-7 py-3.5 text-sm font-bold text-white transition duration-300 hover:-translate-y-1 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-200"
+            >
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <div className="relative animate-reveal-delay">
+          <div className="premium-panel p-6 sm:p-8">
+            <div className="flex items-center justify-between border-b border-white/10 pb-5">
+              <div>
+                <p className="text-sm uppercase tracking-[0.25em] text-cyan-200/80">Engineer Profile</p>
+                <h2 className="mt-2 text-2xl font-bold text-white">Frontend + Backend Delivery</h2>
+              </div>
+              <div className="h-14 w-14 rounded-2xl border border-violet-300/30 bg-violet-300/10 shadow-lg shadow-violet-500/10" />
             </div>
 
-            {/* Decorative elements */}
-            <div className="absolute top-0 right-0 -mr-20 -mt-20">
-                <div className="w-96 h-96 bg-secondary/10 rounded-full blur-3xl"></div>
+            <div className="mt-6 grid gap-4 sm:grid-cols-3">
+              {highlights.map((item) => (
+                <div key={item.label} className="rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition duration-300 hover:-translate-y-1 hover:border-cyan-300/40 hover:bg-cyan-300/10">
+                  <p className="text-3xl font-black text-cyan-200">{item.value}</p>
+                  <p className="mt-2 text-sm leading-5 text-slate-400">{item.label}</p>
+                </div>
+              ))}
             </div>
-            <div className="absolute bottom-0 left-0 -ml-20 -mb-20">
-                <div className="w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+
+            <div className="mt-6 space-y-4">
+              {['React and Vue interfaces', 'REST APIs and database design', 'CRM, HRMS, payroll, access systems'].map((item, index) => (
+                <div key={item} className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-slate-950/40 p-4 transition duration-300 hover:border-blue-300/40 hover:bg-blue-300/10">
+                  <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-cyan-300 to-violet-400 text-sm font-black text-slate-950">
+                    0{index + 1}
+                  </span>
+                  <span className="text-sm font-semibold text-slate-200">{item}</span>
+                </div>
+              ))}
             </div>
-        </section>
-    );
+          </div>
+        </div>
+      </div>
+
+      <div className="relative z-10 mx-auto mt-16 h-px max-w-7xl bg-gradient-to-r from-transparent via-cyan-300/30 to-transparent" />
+    </section>
+  );
 };
 
 export default Hero;

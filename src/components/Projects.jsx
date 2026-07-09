@@ -1,101 +1,80 @@
 import React from 'react';
 
-const Projects = () => {
-  const projects = [
-    {
-      title: "Field Force Automation",
-      company: "Senzr AIOT",
-      duration: "Jul 2025 – Jan 2026",
-      tech: ["Vue.js", "Tailwind CSS", "Node.js", "PostgreSQL", "AWS (S3)"],
-      description: [
-        "Developed a SaaS product with hierarchical role-based access to optimize Digital Work Order Management, enabling seamless task creation, assignment, and status tracking.",
-        "Implemented real-time GPS tracking for field staff to monitor live locations and movement history.",
-        "Built Work Order & Task Management workflows to streamline task prioritization and completion tracking."
-      ]
-    },
-    {
-      title: "Payroll Automation Platform",
-      company: "Senzr AIOT",
-      duration: "Dec 2024 - Jun 2025",
-      tech: ["React.js", "Directus (Plugin)", "AWS"],
-      description: [
-        "Automated Payroll Processing & Payslip System: End-to-end payroll module with automated payslip generation and distribution.",
-        "Real-time Calculation & Compliance Engine: Architected a cloud-based calculation engine on AWS to automate statutory deductions and tax compliance.",
-        "Salary Reporting & Analytics Dashboards: Designed responsive UI dashboards using Tailwind CSS for comprehensive financial insights."
-      ]
-    },
-    {
-      title: "Device Access Management Platform",
-      company: "Senzr AIOT",
-      duration: "Jul 2024 – Nov 2024",
-      tech: ["Vue.js", "Vuetify", "Node.js", "PostgreSQL"],
-      description: [
-        "Built a centralized Device Access Management Platform handling employee attendance, real-time entry/exit tracking, and working-hour calculations.",
-        "Designed controller-based door access control with granular permissions.",
-        "Implemented shift management and automated attendance logic for accurate reporting."
-      ]
-    },
-    {
-      title: "Trade Management Platform",
-      company: "Icanio Technologies",
-      duration: "Dec 2023 – Mar 2024",
-      tech: ["Node.js", "MySQL"],
-      description: [
-        "Built a scalable trade management backend system to handle secure transactions, validation, and audit tracking.",
-        "Developed RESTful APIs with strong payload validation, error handling, and audit logs."
-      ]
-    },
-    {
-      title: "Asset Management Platform",
-      company: "Icanio Technologies",
-      duration: "Sep 2023 – Dec 2023",
-      tech: ["Node.js", "PostgreSQL"],
-      description: [
-        "Developed an asset management backend platform for tracking assets, monitoring status, and managing operational data.",
-        "Engineered notification systems and reporting APIs to support analytics."
-      ]
-    }
-  ];
+const projects = [
+  {
+    title: 'Field Force Automation',
+    company: 'Senzr AIOT',
+    duration: 'Jul 2025 - Jan 2026',
+    tech: ['Vue.js', 'Tailwind CSS', 'Node.js', 'PostgreSQL', 'AWS S3'],
+    summary: 'SaaS workflow platform for digital work orders, staff tracking, task assignment, and live field operations.',
+  },
+  {
+    title: 'Payroll Automation Platform',
+    company: 'Senzr AIOT',
+    duration: 'Dec 2024 - Jun 2025',
+    tech: ['React.js', 'Directus Plugin', 'AWS', 'Tailwind CSS'],
+    summary: 'Payroll processing system with payslip generation, compliance calculations, and analytics dashboards.',
+  },
+  {
+    title: 'Device Access Management',
+    company: 'Senzr AIOT',
+    duration: 'Jul 2024 - Nov 2024',
+    tech: ['Vue.js', 'Vuetify', 'Node.js', 'PostgreSQL'],
+    summary: 'Centralized access platform for attendance, entry and exit tracking, shift management, and permissions.',
+  },
+  {
+    title: 'Trade Management Platform',
+    company: 'Icanio Technologies',
+    duration: 'Dec 2023 - Mar 2024',
+    tech: ['Node.js', 'MySQL', 'REST APIs'],
+    summary: 'Backend system for secure trade transactions, validation, audit tracking, and operational reporting.',
+  },
+  {
+    title: 'Asset Management Platform',
+    company: 'Icanio Technologies',
+    duration: 'Sep 2023 - Dec 2023',
+    tech: ['Node.js', 'PostgreSQL', 'Notifications'],
+    summary: 'Asset tracking backend with status monitoring, reporting APIs, and notification workflows.',
+  },
+];
 
+const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Projects
-          </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
-            Showcasing my technical contributions and solutions.
+    <section id="projects" className="section-shell">
+      <div className="mx-auto max-w-7xl px-5 sm:px-8">
+        <div className="section-heading">
+          <div>
+            <div className="section-kicker">Projects</div>
+            <h2 className="section-title mt-4">Recruiter-ready proof of impact.</h2>
+          </div>
+          <p className="section-copy">
+            A selection of production-oriented products spanning field operations, payroll, access control, trade workflows, and asset systems.
           </p>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-2 xl:grid-cols-2">
+        <div className="mt-12 grid gap-5 lg:grid-cols-2">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white overflow-hidden shadow rounded-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
-              <div className="p-6 flex-grow">
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-4">
-                  <h3 className="text-xl font-bold text-gray-900">{project.title}</h3>
-                  <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide mt-1 sm:mt-0">
-                    {project.duration}
-                  </span>
+            <article key={project.title} className={`project-card premium-card group p-6 sm:p-7 ${index === 0 ? 'lg:col-span-2' : ''}`}>
+              <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
+                <div>
+                  <p className="text-sm font-semibold text-cyan-200">{project.company}</p>
+                  <h3 className="mt-2 text-2xl font-bold text-white">{project.title}</h3>
                 </div>
-                <div className="mb-4">
-                  <p className="text-sm font-medium text-indigo-600 mb-2">{project.company}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tech.map((t, i) => (
-                      <span key={i} className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-green-100 text-green-800">
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                <ul className="list-disc pl-5 space-y-2 text-sm text-gray-600">
-                  {project.description.map((desc, idx) => (
-                    <li key={idx}>{desc}</li>
-                  ))}
-                </ul>
+                <span className="w-fit rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-bold text-slate-300">
+                  {project.duration}
+                </span>
               </div>
-            </div>
+
+              <p className="mt-5 max-w-3xl text-sm leading-7 text-slate-300">{project.summary}</p>
+
+              <div className="mt-6 flex flex-wrap gap-2">
+                {project.tech.map((item) => (
+                  <span key={item} className="rounded-full bg-slate-950/70 px-3 py-1.5 text-xs font-semibold text-slate-300 ring-1 ring-white/10 transition group-hover:text-cyan-100 group-hover:ring-cyan-300/30">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </article>
           ))}
         </div>
       </div>
