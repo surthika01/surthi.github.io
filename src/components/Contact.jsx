@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const socials = [
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/surthika-vasantha-51739822b/' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/surthika-sathishraj-b396213b1/' },
   { label: 'Email', href: 'mailto:surthikasathishraj@gmail.com' },
 ];
 
@@ -78,8 +78,8 @@ const Contact = () => {
               Message
               <textarea className="field-input min-h-36 resize-y" name="message" placeholder="Tell me what you would like to discuss" required disabled={status === 'submitting'} />
             </label>
-            <button 
-              className="rounded-full bg-gradient-to-r from-cyan-300 to-violet-300 px-7 py-3.5 text-sm font-black text-slate-950 shadow-xl shadow-cyan-500/20 transition duration-300 hover:-translate-y-1 hover:shadow-cyan-500/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-200 disabled:opacity-70 disabled:hover:translate-y-0" 
+            <button
+              className="rounded-full bg-gradient-to-r from-cyan-300 to-violet-300 px-7 py-3.5 text-sm font-black text-slate-950 shadow-xl shadow-cyan-500/20 transition duration-300 hover:-translate-y-1 hover:shadow-cyan-500/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-200 disabled:opacity-70 disabled:hover:translate-y-0"
               type="submit"
               disabled={status === 'submitting'}
             >
